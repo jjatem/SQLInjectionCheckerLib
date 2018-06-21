@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLInjectionCheckerLib", "SQLInjectionCheckerLib\SQLInjectionCheckerLib.csproj", "{AD96EA4D-C9AA-472B-8B8A-EF981E11D26F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD96EA4D-C9AA-472B-8B8A-EF981E11D26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD96EA4D-C9AA-472B-8B8A-EF981E11D26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD96EA4D-C9AA-472B-8B8A-EF981E11D26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD96EA4D-C9AA-472B-8B8A-EF981E11D26F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
