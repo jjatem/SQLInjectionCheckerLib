@@ -90,6 +90,7 @@ namespace SQLInjectionCheckerLib
                     {
                         ErrorMessage = $@"Invalid User Input Provided for Member [{prop.Name}]. A possible Sql Injection Attack Detected on the following input
                         [""{propValue}""]";
+                        return false; //exit with failed validation
                     }
                 }
             }

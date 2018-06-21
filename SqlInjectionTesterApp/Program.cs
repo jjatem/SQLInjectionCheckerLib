@@ -18,7 +18,7 @@ namespace SqlInjectionTesterApp
             Acct.SelectSql = "SELECT * FROM mbsi.account WHERE account_number_full={0};";
 
             string ErrMsg = string.Empty;
-            if (SQLInjectionCheckerUtils.CheckAllPublicPropertiesForSqlInjection<Account>(Acct, out ErrMsg))
+            if (!SQLInjectionCheckerUtils.CheckAllPublicPropertiesForSqlInjection<Account>(Acct, out ErrMsg))
             {
                 Console.WriteLine("SQL Injection Attack Detected");
                 Console.WriteLine(ErrMsg);
