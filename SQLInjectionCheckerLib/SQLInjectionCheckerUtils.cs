@@ -84,7 +84,8 @@ namespace SQLInjectionCheckerLib
 
                 foreach(PropertyInfo prop in properties)
                 {
-                    string propValue = prop.GetValue(Obj, null).ToString();
+                    object propValueObj = prop.GetValue(Obj, null);
+                    string propValue = propValueObj == null ? "" : propValueObj.ToString();
 
                     if (propValue.CheckForSQLInjection())
                     {
